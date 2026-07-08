@@ -1,0 +1,70 @@
+/* REGLAS BASE DE VISIBILIDAD (Para que se lea siempre bien en la calculadora) */
+select.form-select option {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+
+select.form-select {
+  color: #ffffff !important;
+}
+
+/* 🔥 MODO INFIERNO ULTRA SEVERO 🔥 */
+.modo-infierno-activo {
+  background-color: #0d0000 !important; /* Fondo general cambia a un negro rojizo */
+  transition: all 0.5s ease-in-out;
+}
+
+/* El fondo principal de las secciones cambia drásticamente */
+.modo-infierno-activo main {
+  background-color: #0d0000 !important;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Las tarjetas y formularios se vuelven cajas de energía roja */
+.modo-infierno-activo .card, 
+.modo-infierno-activo form,
+.modo-infierno-activo .bg-dark {
+  background-color: #1a0000 !important; /* Fondos de tarjetas a rojo oscuro */
+  border-color: #ff0000 !important;
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.6), inset 0 0 15px rgba(255, 0, 0, 0.2) !important;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Todos los textos secundarios grises pasan a ser rojo brillante o blanco puro */
+.modo-infierno-activo .text-secondary,
+.modo-infierno-activo .text-muted,
+.modo-infierno-activo label {
+  color: #ff6666 !important;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Títulos con tipografía sangrienta y neón */
+.modo-infierno-activo h1, 
+.modo-infierno-activo h2, 
+.modo-infierno-activo h3,
+.modo-infierno-activo h4,
+.modo-infierno-activo .text-danger {
+  color: #ff0000 !important;
+  text-shadow: 0 0 12px #ff0000, 0 0 25px #8b0000;
+  transition: all 0.5s ease-in-out;
+}
+
+/* 🔥 CORRECCIÓN: Quita el destello exagerado de las palabras que ya son rojas (como INK o NOSOTROS) */
+.modo-infierno-activo h1 span,
+.modo-infierno-activo h2 span,
+.modo-infierno-activo .navbar-brand span span {
+  color: #ff2222 !important; /* Un rojo vivo pero plano */
+  text-shadow: none !important; /* Eliminamos el destello borroso */
+}
+
+/* Los inputs de la calculadora y contacto en Modo Infierno */
+.modo-infierno-activo .form-control,
+.modo-infierno-activo .form-select {
+  background-color: #000000 !important;
+  border-color: #ff0000 !important;
+  color: #ffffff !important;
+}
+
+.modo-infierno-activo .form-control::placeholder {
+  color: #555555 !important;
+}
