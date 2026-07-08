@@ -17,7 +17,7 @@ function Inicio() {
         
         // Consultamos la tabla exacta en Supabase
         const { data, error } = await supabase
-          .from('demon-ink-api')
+          .from('estilos_tatuajes')
           .select('*');
 
         if (error) {
